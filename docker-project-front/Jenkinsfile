@@ -4,7 +4,7 @@ node {
     } 
  
     stage('Build image') { 
-       dockerImage = docker.build("jangseokhan123/node-front:1.0", "-f docker-project-front/Dockerfile .") 
+       dockerImage = docker.build("jangseokhan123/node-front:1.0", "-f docker-project-front/Dockerfile docker-project-front") 
     } 
  
  stage('Push image') { 
